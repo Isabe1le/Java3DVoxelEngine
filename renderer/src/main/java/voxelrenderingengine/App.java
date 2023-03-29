@@ -1,4 +1,4 @@
-package voxel;
+package voxelrenderingengine;
 
 /**
  * Hello world!

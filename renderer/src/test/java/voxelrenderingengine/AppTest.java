@@ -1,4 +1,4 @@
-package voxel;
+package voxelrenderingengine;
 
 import static org.junit.Assert.assertTrue;
 
