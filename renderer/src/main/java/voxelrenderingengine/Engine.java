@@ -9,9 +9,11 @@ public class Engine
     private double gravity;
 
     // The simulations width (in meters)
-    private final double simWidth;
+    private final int simWidth;
     // The simulations height (in meters)
-    private final double simHeight;
+    private final int simHeight;
+
+    private EngineFrame frame;
 
     // A list of all voxles this engine handles.
     private List<Voxel> voxelList = new ArrayList<Voxel>();
@@ -21,10 +23,11 @@ public class Engine
      * @param simHeight the simulation height in meters.
      * @param gravity the simulation gravity in m/s
      */
-    public Engine(double simWidth, double simHeight, double gravity) {
+    public Engine(int simWidth, int simHeight, double gravity) {
         this.simWidth = simWidth;
         this.simHeight = simHeight;
         this.gravity = gravity;
+        this.frame = new EngineFrame(this.simWidth, this.simHeight);
     }
 
     /**

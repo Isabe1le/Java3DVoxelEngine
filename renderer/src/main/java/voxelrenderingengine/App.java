@@ -2,7 +2,7 @@ package voxelrenderingengine;
 
 public class App {
     public static void main(String[] args) {
-        Engine engine = new Engine(100, 100, 5);
+        Engine engine = new Engine(1000, 600, 5);
 
         Vector voxelPositionVector = new Vector(10, 15, 30);
 
