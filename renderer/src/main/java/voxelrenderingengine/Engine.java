@@ -9,9 +9,9 @@ public class Engine
     private double gravity;
 
     // The simulations width (in meters)
-    private double simWidth;
+    private final double simWidth;
     // The simulations height (in meters)
-    private double simHeight;
+    private final double simHeight;
 
     // A list of all voxles this engine handles.
     private List<Voxel> voxelList = new ArrayList<Voxel>();
