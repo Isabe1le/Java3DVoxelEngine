@@ -11,6 +11,13 @@ public class App {
         Voxel voxel = new Voxel(voxelMovementVector, voxelPositionVector, 10.0, 5.0);
         engine.addVoxel(voxel);
 
+        // Print out the list
         System.out.println(engine.getVoxelList());
+
+        // Print out the first Voxel
+        System.out.println(engine.getVoxelList().get(0));
+
+        // Print out the first Voxels momentum vector
+        System.out.println(engine.getVoxelList().get(0).getMomentumVector());
     }
 }
