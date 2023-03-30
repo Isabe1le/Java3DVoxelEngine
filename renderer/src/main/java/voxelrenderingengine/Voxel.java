@@ -25,4 +25,22 @@ public class Voxel {
         this.mass = mass;
         this.size = size;
     }
+
+    /**
+     * @return the Voxels momentum vector.
+     */
+    public Vector getMomentumVector() {
+        // p = mv
+        // p = momentum
+        // m = mass
+        // v = velocity
+
+        double px = this.mass * this.velocity.x;
+        double py = this.mass * this.velocity.y;
+        double pz = this.mass * this.velocity.z;
+
+        Vector momentum = new Vector(px, py, pz);
+
+        return momentum;
+    }
 }
