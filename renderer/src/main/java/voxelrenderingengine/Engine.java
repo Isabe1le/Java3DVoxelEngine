@@ -27,7 +27,7 @@ public class Engine
         this.simWidth = simWidth;
         this.simHeight = simHeight;
         this.gravity = gravity;
-        this.frame = new EngineFrame(this.simWidth, this.simHeight);
+        this.frame = new EngineFrame(this.simWidth, this.simHeight, this);
     }
 
     /**

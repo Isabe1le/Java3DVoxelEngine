@@ -1,5 +1,7 @@
 package voxelrenderingengine;
 
+import java.util.List;
+
 public class Voxel {
     // The voxels position vector.
     public Vector position;
@@ -42,5 +44,24 @@ public class Voxel {
         Vector momentum = new Vector(px, py, pz);
 
         return momentum;
+    }
+
+    public Vector[] getPointPositionVectors() {
+        Vector[] vectorList = new Vector[8];
+
+        //  0--------------1
+        //  |\             |\
+        //  | \            | \
+        //  |  \           |  \
+        //  |   3--------------2
+        //  |   |          |   |
+        //  7---|----------6   |
+        //   \  |           \  |
+        //    \ |            \ |
+        //     \|             \|
+        //      4--------------5
+
+        return vectorList;
+
     }
 }
