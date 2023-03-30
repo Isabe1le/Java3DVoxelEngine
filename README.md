@@ -1,2 +1,2 @@
-# Java3DVoxelRender
- My first attempt at graphics rendering beyond my CGOL projects.
+# Java3DVoxelEngine
+ My first attempt at graphics engine beyond my CGOL projects.
