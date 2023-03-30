@@ -4,8 +4,8 @@ public class Voxel {
     // The voxels position vector.
     public Vector position;
 
-    // The voxels motion vector (movement in terms of m/s)
-    public Vector motion;
+    // The voxels velocity vector (movement in terms of m/s)
+    public Vector velocity;
 
     // The voxels mass in kg.
     public double mass;
@@ -15,13 +15,13 @@ public class Voxel {
 
     /**
      * @param positionVector the voxels starting position vector.
-     * @param motionVector the voxels starting motion vector.
+     * @param velocityVector the voxels starting velocity vector.
      * @param mass the voxels mass.
      * @param size the voxels size.
      */
-    public Voxel(Vector positionVector, Vector motionVector, double mass, double size) {
+    public Voxel(Vector positionVector, Vector velocityVector, double mass, double size) {
         this.position = positionVector;
-        this.motion = motionVector;
+        this.velocity = velocityVector;
         this.mass = mass;
         this.size = size;
     }
